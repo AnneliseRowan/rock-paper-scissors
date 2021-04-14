@@ -12,12 +12,12 @@ var playGame = function() {
     if (!userChoice) {
         return; 
     }
-    /*
-    if (userChoice !== "r" || userChoice !== "s" || userChoice !== "p") {
+    
+    if (userChoice !== "r" && userChoice !== "s" && userChoice !== "p") {
         window.alert("Please choose r, p, or s");
        playGame(); 
     }
-    */
+    
 
     var index = Math.floor(Math.random() * options.length);
     var computerChoice = options[index]; 
